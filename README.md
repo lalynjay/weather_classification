@@ -4,7 +4,9 @@
 
 # Data Preparation
 
-# Classification
+# Modeling
+
+# Evaluation
 
 # Conclusions
 
