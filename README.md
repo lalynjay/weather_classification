@@ -16,14 +16,24 @@ Thus, it will be important for my classification model to have a very low rate o
 
 # Data 
 
-The dataset consisted of two csv files- one containing records for in different cities, and the other with boolean values for whether it was a good day for an outdoor bbq. The data was sourced from https://www.kaggle.com/datasets/thedevastator/weather-prediction. Both files contained 3,654 entries, each representing a day that weather information was recorded. The dates span between 2000 and 2010, and initially contained information for 18 different European cities. I was only interested in data related to the Heathrow meteorological stations, so removed irrelevant columns and merged the two dataframes before performing any exploratory analysis or modeling. 
+The dataset consisted of two csv files- one containing records for in different cities, and the other with boolean values for whether it was a good day for an outdoor bbq. The data was sourced from https://www.kaggle.com/datasets/thedevastator/weather-prediction. Both files contained 3,654 entries, each representing a day that weather information was recorded. Of those, 2,785 were False (not a god day for a bbq) and 869 True. The dates span between 2000 and 2010, and initially contained information for 18 different European cities. I was only interested in data related to the Heathrow meteorological stations, so removed irrelevant columns and merged the two dataframes before performing any exploratory analysis or modeling. 
 
-![lvg_room](https://github.com/lalynjay/Housing_Prices_Analysis/blob/alt/images/lvg.png)
+![outcomes](https://github.com/lalynjay/weather_classification/blob/main/images/outcomes.png)
+
+False outcomes were 3 times more common than true ones.
+
+![months](https://github.com/lalynjay/weather_classification/blob/main/images/months.png)
+
+Summer months had way more good days, and some winter months had none.
 
 
 # Modeling
 
-Multiple different classification algorithms were explored- logistic regression, K-Nearest Neighbors, and Decesion Tree models were investigated, tuned, and evaluated. The F1 score was the primary metric used for evaluation. A grid search was used to find the optimal random forest model. 
+Multiple different classification algorithms were explored- logistic regression, K-Nearest Neighbors, a basic Decision Tree, and Random Forest models were investigated, tuned, and evaluated. The F1 score was the primary metric used for evaluation. 
+
+![all_features](https://github.com/lalynjay/weather_classification/blob/main/images/feature2.png)
+
+An optimal model based on a relatively simple grid search found the above features most important.
 
 
 # Evaluation
@@ -32,6 +42,9 @@ The basic decision tree model, and subsequent more complex models based off deci
 
 While decision trees can often tend to overfit training data and be more affected by outliers, in this case the decision tree performed just as well as the more complex models. Since a random forest or bagged tree is much more computationally expensive than a simple decision tree, in this case the decision tree is the best model in terms of overall performance and efficiency. 
 
+![features](https://github.com/lalynjay/weather_classification/blob/main/images/feature_1.png)
+
+The basic decision tree model found precipitation and max temp as the primary determining factors.
 
 # Conclusions
 
@@ -60,7 +73,7 @@ While decision trees can often tend to overfit training data and be more affecte
 
 # For More Information
 
-See the full analysis in the [Jupyter Notebook](https://github.com/lalynjay/Housing_Prices_Analysis/blob/alt/Housing_Prices_Analysis.ipynb) or review [this presentation](https://github.com/lalynjay/Housing_Prices_Analysis/blob/alt/Housing_Prices_presentation.pdf)
+See the full analysis in the [Jupyter Notebook](https://github.com/lalynjay/weather_classification/blob/main/weather_classification.ipynb) or review [this presentation](https://github.com/lalynjay/Housing_Prices_Analysis/blob/alt/Housing_Prices_presentation.pdf)
 
 For additional info, contact Lynn Anderson at lalynjay@gmail.com
 
