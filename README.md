@@ -1,4 +1,6 @@
-# Weather Classification- Good Day for a BBQ?
+# Fire Up the Grill?
+
+## Using Classification Modeling to Predict Weather Outcomes
 
 ### Lynn Anderson
 
@@ -87,7 +89,7 @@ For additional info, contact Lynn Anderson at lalynjay@gmail.com
 
 Repository Structure
 
-├── data
+├── data (archive(1).zip)
 
 ├── images
 
