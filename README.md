@@ -33,7 +33,13 @@ Multiple different classification algorithms were explored- logistic regression,
 
 ![all_features](https://github.com/lalynjay/weather_classification/blob/main/images/feature2.png)
 
-An optimal model based on a relatively simple grid search found the above features most important.
+An optimal model based on a relatively simple grid search on a Random Forest found the above features most important.
+
+
+![features](https://github.com/lalynjay/weather_classification/blob/main/images/feature_1.png)
+
+The basic decision tree model found precipitation and max temp as the primary determining factors. 
+
 
 
 # Evaluation
@@ -42,9 +48,11 @@ The basic decision tree model, and subsequent more complex models based off deci
 
 While decision trees can often tend to overfit training data and be more affected by outliers, in this case the decision tree performed just as well as the more complex models. Since a random forest or bagged tree is much more computationally expensive than a simple decision tree, in this case the decision tree is the best model in terms of overall performance and efficiency. 
 
-![features](https://github.com/lalynjay/weather_classification/blob/main/images/feature_1.png)
+![features](https://github.com/lalynjay/weather_classification/blob/main/images/tree.png)
 
-The basic decision tree model found precipitation and max temp as the primary determining factors.
+As is evident again in this visualization of the basic decision tree, max temp and precipitation were the primary factors in determining the outcome.
+
+
 
 # Conclusions
 
