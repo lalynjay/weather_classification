@@ -83,7 +83,7 @@ As is evident again in this visualization of the basic decision tree, max temp a
 
 # For More Information
 
-See the full analysis in the [Jupyter Notebook](https://github.com/lalynjay/weather_classification/blob/main/weather_classification.ipynb) or review [this presentation](https://github.com/lalynjay/Housing_Prices_Analysis/blob/alt/Housing_Prices_presentation.pdf)
+See the full analysis in the [Jupyter Notebook](https://github.com/lalynjay/weather_classification/blob/main/weather_classification.ipynb) or review [this presentation](https://github.com/lalynjay/weather_classification/blob/main/weather_classification.pdf)
 
 For additional info, contact Lynn Anderson at lalynjay@gmail.com
 
